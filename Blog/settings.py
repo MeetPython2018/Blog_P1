@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&%y8()08nnw9!rn*hnp13%^5xq8&yvtc(dn#4n$-%t2*k4^hvv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -145,9 +145,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'   # 闈欐�佹枃浠跺姞杞藉湴鍧�
-STATIC_FILE_DIR = {os.path.join(BASE_DIR, 'static')}
+STATIC_URL = '/static/'   
+# STATIC_FILE_DIR = {os.path.join(BASE_DIR, 'static')}
+
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "upload")
 
+# STATICFILES_DIRS=[
+#    os.path.join(BASE_DIR,"static")   #最后整合需加载的资源，放到根目录中的static中
+# ]
