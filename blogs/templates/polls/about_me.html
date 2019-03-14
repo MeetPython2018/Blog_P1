@@ -16,7 +16,7 @@
             <img src="{% static "blogs/img/boke.svg" %}" alt="" class="logo">
             <div class="nav-wrap">
                 <li class="nav-item avtive xs_li_07">
-                    <a href="" style="text-decoration: none;color: #ef4868">首页</a>
+                    <a href="{% url 'blogs:index' %}" style="text-decoration: none">首页</a>
                 </li>
                 <li class="nav-item xs_li_07">
                     <a href="{% url 'blogs:my_blog'%}" style="text-decoration: none" class="myblog">优秀博文</a>
@@ -30,7 +30,7 @@
                     <a href="" style="text-decoration: none">留言板</a>
                 </li>
                 <li class="nav-item xs_li_07">
-                    <a href="{% url 'blogs:about_me' %}" style="text-decoration: none">关于我</a>
+                    <a href="{% url 'blogs:about_me' %}" style="text-decoration: none;color: #ef4868">关于我</a>
                 </li>
             </div>
             <div class="login-box">
