@@ -203,3 +203,7 @@ def PT_blog_show(request, item_id):
                        'next_article': next_article, 'item_id': item_id, 'pl': pl})
 
 
+# 关于我
+def about_me(request):
+    if request.method == 'GET':
+        return render(request, 'polls/about_me.html')

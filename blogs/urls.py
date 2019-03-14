@@ -7,5 +7,6 @@ urlpatterns = [
     path('getKeyword/', views.getKeyword, name='getKeyword'),
     path('my_blog/', views.my_blog, name='my_blog'),
     path('blog_show/<int:item_id>', views.blog_show, name='blog_show'),
-    path('kaitong/', views.kaitong, name='kaitong')
+    path('kaitong/', views.kaitong, name='kaitong'),
+    path('about_me/', views.about_me, name='about_me')
 ]
